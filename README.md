@@ -2,14 +2,25 @@
 
 This project explores **uncertainty quantification in deep learning** using the :contentReference[oaicite:0]{index=0} dataset as a controlled experimental setting.
 
-The repository demonstrates how **Bayesian deep learning techniques**, particularly **Monte-Carlo Dropout**, can be used to move beyond standard point predictions and instead produce:
+Instead of producing only a single prediction, the model is extended with **Monte-Carlo Dropout** to estimate:
 
-- **Predictive probabilities**
-- **Model uncertainty estimates**
-- **Confidence–accuracy relationships**
-- **Robustness analysis under input perturbations**
+- **Prediction confidence**
+- **Epistemic (model) uncertainty**
+- **Confidence vs. accuracy behavior**
+- **Robustness under distribution shift** (e.g., rotated digits)
 
-Starting from a high-accuracy deterministic CNN baseline (~99% test accuracy), the project introduces **stochastic forward passes** to approximate Bayesian inference and measure **epistemic uncertainty**.  
-Results show that **incorrect predictions correlate with higher uncertainty**, and that uncertainty increases under **distribution shifts** such as image rotations.
+Key highlights:
 
-Overall, this work illustrates how **lightweight probabilistic methods** can make deep learning models more **interpretable, reliable, and suitable for safety-critical applications**.
+- Built a **Bayesian CNN** in PyTorch with stochastic inference
+- Achieved **~99% classification accuracy** while quantifying uncertainty
+- Showed that **misclassified samples exhibit higher entropy and mutual information**
+- Provided **visualizations and metrics** useful for real-world reliability analysis
+
+This repository is designed to showcase practical skills in:
+
+- **Probabilistic Deep Learning**
+- **Uncertainty Quantification**
+- **PyTorch model development**
+- **Experimental evaluation and visualization**
+
+The goal is to illustrate how lightweight Bayesian techniques can make neural networks **more trustworthy, interpretable, and production-ready**, especially in **risk-sensitive applications**.
