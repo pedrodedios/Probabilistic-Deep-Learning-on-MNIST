@@ -1,6 +1,6 @@
 # Probabilistic-Deep-Learning-on-MNIST
 
-This project explores **uncertainty quantification in deep learning** using the MNIST dataset as a controlled experimental setting and coded using **PyTorch**.
+This project explores **uncertainty quantification in deep learning** coded in **PyTorch** and using the MNIST dataset as a controlled experimental setting.
 
 Instead of producing only a single prediction, the model is extended with **Monte-Carlo Dropout** to estimate:
 
